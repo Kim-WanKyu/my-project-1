@@ -1,0 +1,19 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore build output
+dist/
+build/
+
+# Ignore weatherAPI.js file.
+weatherAPI.js
+
+# Ignore system files
+.DS_Store
+Thumbs.db

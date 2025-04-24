@@ -1,0 +1,36 @@
+.clock-box {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  line-height: 20px;
+  vertical-align: middle;
+  align-content: center;
+  text-align: center;
+  margin: 10px;
+  background-color: lightgray;
+  border-radius: 40px 40px 0 0;
+  border: 1px solid black;
+}
+.clock-box-inner {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  border-radius: 40px;
+  padding-inline: 10px;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
+  border: 2px solid limegreen;
+
+  #clock-date {
+    font-size: smaller;
+    color: powderblue;
+  }
+  #clock-time {
+    font-size: x-large;
+    color: white;
+  }
+}

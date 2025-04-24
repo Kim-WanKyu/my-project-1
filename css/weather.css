@@ -1,0 +1,16 @@
+.weather-box {
+  background-color: aliceblue;
+  position: absolute;
+  right: 15px;
+  top: 40%;
+  border: 2px solid black;
+  width: fit-content;
+  max-width: 200px;
+  z-index: 1;
+}
+.weather-box:hover {
+  cursor: pointer;
+  opacity: 10%;
+  transition: all 1s ease-in;
+  border: 2px solid transparent;
+}

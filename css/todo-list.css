@@ -1,0 +1,117 @@
+#todo-list-box {
+  width: 250px;
+  max-width: 250px;
+  border: 1px solid black;
+  background-color: azure;
+
+  #todo-list-form {
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: thin;
+    gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
+
+    #todo-list-input {
+      display: inline-block;
+      max-width: 150px;
+      border: 2px solid black;
+      box-shadow: 0 2px;
+      border-radius: 15px;
+      background-color: whitesmoke;
+      font-family: "Roboto Mono";
+      font-size: 15px;
+      font-weight: 600;
+      padding-inline: 10px;
+    }
+    #todo-list-input:focus {
+      outline: 2px solid rgba(255, 0, 0, 0.5);
+      border: 2px solid transparent;
+      box-shadow: 0 2px rgba(0, 0, 255, 0.5);
+    }
+    #todo-list-btn {
+      display: inline-block;
+      width: fit-content;
+      border: 2px solid black;
+      box-shadow: 0 2px;
+      border-radius: 15px;
+      background-color: whitesmoke;
+      font-family: "Roboto Mono";
+      font-size: 15px;
+      font-weight: 600;
+    }
+    #todo-list-btn:hover {
+      cursor: pointer;
+      opacity: 80%;
+      background-color: rgba(255, 0, 0, 0.2);
+    }
+    #todo-list-btn:active {
+      outline: 2px solid rgba(255, 0, 0, 0.5);
+      border: 2px solid transparent;
+      box-shadow:
+        0 2px rgba(0, 0, 255, 0.5),
+        2px 1px rgba(0, 0, 255, 0.5),
+        -2px 1px rgba(0, 0, 255, 0.5);
+    }
+  }
+
+  > .todo-hr {
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  #todo-list-list {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    list-style-type: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    max-height: 200px;
+    min-height: 200px;
+    height: 200px;
+
+    li {
+      word-break: break-all;
+      overflow-wrap: break-word;
+      width: 190px;
+      min-height: 1.5em;
+      margin: auto;
+      margin-bottom: 10px;
+      border: 2px solid black;
+      box-shadow: 0 2px;
+      border-radius: 15px;
+      background-color: whitesmoke;
+      font-family: "Roboto Mono";
+      font-size: 15px;
+      font-weight: 600;
+      padding-inline: 10px;
+      display: inline-block;
+
+      justify-self: center;
+      .x-btn {
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        background-color: black;
+        border-radius: 100%;
+        color: red;
+        text-align: center;
+        margin-right: 10px;
+      }
+      .x-btn:hover {
+        cursor: pointer;
+        opacity: 80%;
+      }
+    }
+    li:hover {
+      outline: 2px solid rgba(255, 0, 0, 0.5);
+      border: 2px solid transparent;
+      box-shadow: 0 2px rgba(0, 0, 255, 0.5);
+    }
+  }
+}

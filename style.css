@@ -1,0 +1,23 @@
+.image {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: 2px solid black;
+  width: 20%;
+  max-width: 200px;
+  z-index: 1;
+}
+.image:hover {
+  cursor: pointer;
+  opacity: 10%;
+  transition: all 1s ease-in;
+  border: 2px solid transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
