@@ -1,13 +1,13 @@
 .clock-box {
-  display: inline-block;
+  display: block;
   width: 200px;
   height: 60px;
   padding: 10px;
   line-height: 20px;
-  vertical-align: middle;
   align-content: center;
   text-align: center;
-  margin: 10px;
+  margin: 0 auto;
+  margin-bottom: 50px;
   background-color: lightgray;
   border-radius: 40px 40px 0 0;
   border: 1px solid black;

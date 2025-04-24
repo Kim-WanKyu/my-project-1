@@ -6,10 +6,11 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./css/background.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link rel="stylesheet" href="./css/clock.css" />
     <link rel="stylesheet" href="./css/todo-list.css" />
     <link rel="stylesheet" href="./css/weather.css" />
-    
+
     <script src="./js/background.js" defer></script>
     <script src="./js/login.js" defer></script>
     <script src="./js/clock.js" defer></script>
@@ -20,24 +21,22 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
+    <div class="login-box">
       <form id="login-form" class="hidden">
-        <input type="text" maxlength="20" placeholder="name" required />
+        <input type="text" maxlength="20" placeholder="name (maxLength:20)" required />
         <button type="submit">Login</button>
       </form>
       <div id="login-result" class="hidden">
-        <span>name: </span><span id="login-name"></span>
+        <span>Hello! </span><span id="login-name"></span>
         <button id="logout-btn" type="button">Logout</button>
       </div>
     </div>
-    <hr />
     <div class="clock-box">
       <div id="clock" class="clock-box-inner">
         <div id="clock-date">00/00</div>
         <div id="clock-time">00:00:00</div>
       </div>
     </div>
-    <hr />
     <div id="todo-list-box">
       <form id="todo-list-form">
         <input
@@ -51,7 +50,6 @@
       <hr class="todo-hr" />
       <ul id="todo-list-list"></ul>
     </div>
-    <hr />
     <div id="weather-box" class="weather-box"></div>
   </body>
 </html>

@@ -49,7 +49,7 @@ function makeWeatherArea(data) {
 
   city.textContent = `${data.name} - ${data.sys.country}`;
   weatherMain.textContent = `${data.weather[0].main} (${data.weather[0].description})`;
-  temp.textContent = `${data.main.temp} ℃ / ${convertTemperatureC2F(data.main.temp)} ℉`;
+  temp.textContent = `${data.main.temp.toFixed(3)} ℃ / ${convertTemperatureC2F(data.main.temp)} ℉`;
   windSpeed.textContent = `wind speed: ${data.wind.speed} m/s`;
 
   weatherBox.appendChild(city);
@@ -59,5 +59,5 @@ function makeWeatherArea(data) {
 }
 
 function convertTemperatureC2F(c) {
-  return (c * 9) / 5 + 32;
+  return ((c * 9) / 5 + 32).toFixed(3);
 }

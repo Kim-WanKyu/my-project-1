@@ -29,12 +29,8 @@ const bgImage = document.createElement("img");
 bgImage.src = curImage;
 bgImage.classList.add("image");
 
-const cardBox = document.querySelector("#todo-list-box");
-document.body.insertBefore(bgImage, cardBox);
-
-const bgImageHr = document.createElement("hr");
-bgImageHr.style.border = "1px solid green";
-document.body.insertBefore(bgImageHr, cardBox);
+const todoBox = document.querySelector("#todo-list-box");
+document.body.insertBefore(bgImage, todoBox);
 
 let index = 0;
 setInterval(() => {

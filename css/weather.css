@@ -1,16 +1,25 @@
 .weather-box {
   background-color: aliceblue;
-  position: absolute;
-  right: 15px;
-  top: 40%;
-  border: 2px solid black;
-  width: fit-content;
-  max-width: 200px;
+  position: fixed;
+  left: 15px;
+  top: 10px;
+  max-width: 150px;
+  width: 25%;
+  height: 4em;
   z-index: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  font-size: x-small;
+  font-family: "Times New Roman", Times, serif;
+  color: cadetblue;
 }
 .weather-box:hover {
   cursor: pointer;
-  opacity: 10%;
+  background-color: transparent;
+  color: darkcyan;
+  font-size: small;
   transition: all 1s ease-in;
-  border: 2px solid transparent;
 }
