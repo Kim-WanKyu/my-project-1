@@ -1,5 +1,6 @@
 노마드코더 바닐라JS로 크롬 앱 만들기 (https://nomadcoders.co/javascript-for-beginners)
 
+[결과 보기](https://kim-wankyu.github.io/my-project-js-beginner-1/)
  - 리액트를 듣고 나서 자바스크립트에 관심이 생겼고, 그래서 순수 자바스크립트만으로 뭔갈 만들어보고 싶었고, 간단한 크롬 익스텐션 만들어보자 해서 시작.
  - 크롬 앱 만드는 줄 알고 들어봤는데 Momentum 이라는 어플리케이션의 기능들을 구현해보는 강의였다.
  - 기능 : 시계, TO DO List, 날씨.
